@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <include
+        android:id="@+id/settings_page_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/dolphin"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/set_user_name_box"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_profile_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="40dp"
+        android:hint="Name"
+        android:layout_centerHorizontal="true"
+        app:startIconDrawable="@drawable/round_person_black_24"
+        app:boxStrokeErrorColor="@android:color/holo_red_light"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:helperText="Enter your username here"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/set_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/set_profile_status_box"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_user_name_box"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:hint="About"
+        app:counterEnabled="true"
+        app:counterMaxLength="100"
+        app:errorEnabled="true"
+        android:layout_centerHorizontal="true"
+        app:startIconDrawable="@drawable/round_how_to_reg_24"
+        app:boxStrokeErrorColor="@android:color/holo_red_light"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:helperText="Say something about yourself"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/set_profile_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/update_settings_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/set_profile_status_box"
+        android:textColor="@color/colorPrimary"
+        app:strokeColor="@color/colorPrimaryDark"
+        app:icon="@drawable/round_update_24"
+        app:strokeWidth="1dp"
+        android:text="Update"
+        android:padding="9dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="100dp"/>
+
+</RelativeLayout>

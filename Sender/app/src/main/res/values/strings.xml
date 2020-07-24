@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sender</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_input">Email</string>
+    <string name="password_input">Password</string>
+    <string name="or_login_with_mobile_no">  Or Login with Mobile No.</string>
+    <string name="new_user_register_here">New User? Register here</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="already_registered_click_here">Already Registered? Click here</string>
+    <string name="create_account">Create Account</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="edit_message">Edit Message</string>
+    <string name="type_here">Type Here.....</string>
+    <string name="send_button">Send Button</string>
+    <string name="attach_files">Attach Files</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1027991336208",
+    "firebase_url": "https://sender-messaging.firebaseio.com",
+    "project_id": "sender-messaging",
+    "storage_bucket": "sender-messaging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027991336208:android:68b308a523c72e68d4a195",
+        "android_client_info": {
+          "package_name": "com.allenbenny.sender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027991336208-fh8hhqv359s01mh5n8ba6u2iu5alu0f6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABpUNDG7MyQIlzUBra1A7x07MVniTeVLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027991336208-fh8hhqv359s01mh5n8ba6u2iu5alu0f6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
